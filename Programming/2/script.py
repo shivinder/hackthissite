@@ -3,9 +3,10 @@
 from PIL import Image
 import translator
 
-# filename here
-# https://www.hackthissite.org/missions/prog/2/PNG.png
-png_filename = 'PNG.png'
+# TODO: fetch the png with code instead of saving it manually
+# for now, we will have to save it on the disk manually
+url = 'https://www.hackthissite.org/missions/prog/2/PNG.png'
+png_filename = url.split('/')[-1]
 
 # initialise the morse decoder here
 decoder = translator.Decoder()
@@ -19,7 +20,6 @@ morse_code = ''
 
 # begin traversal through the bytes
 for byte in png_image_bytes:
-    
     # this is the ascii code
     if byte == 1:
         morse_code += chr((counter-offset))
