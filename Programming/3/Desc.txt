@@ -43,4 +43,3 @@ This is the encrypted text:
 Send the last one of the serial numbers you decrypted as answer.
 
 You have 120 seconds time to send the solution.
-
